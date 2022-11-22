@@ -1,0 +1,103 @@
+#include <iostream>
+#include <stdio.h>
+#include <windows.h>
+#include <stdlib.h>
+#include <string.h>
+#include <cstdlib>
+#include <cstdio>
+#include <fstream>
+#include <conio.h>
+#include <math.h>
+#include <dirent.h>
+
+#include "funciones.h"
+#include "juegos/juego_navesitas.h"
+#include "juegos/juego_flappy_bird.h"
+
+using namespace std;
+
+void elHome();
+void aplicaciones(int app);
+void user();
+void memoria_archivos();
+void escribir();
+void internet_explorer();
+void juegos();
+void juego_naves();
+void juego_flappy_bird();
+void config();
+
+int espacio_usado = 120;
+int espacio_total = 24000;
+
+int main() {
+	elHome();
+	return 0;
+}
+
+void elHome() {
+	MostrarCursor();
+	color(9);
+	cout<<"\n\n\n";
+	cout<<"\t\t***************************************************"<<endl;
+	cout<<"\t\t**                                               **"<<endl;
+	cout<<"\t\t**             C R I P I - M A X                 **"<<endl;
+	cout<<"\t\t**                                               **"<<endl;
+	cout<<"\t\t***************************************************"<<endl;
+	color(1);
+	cout<<"\n\t\t\t\tPulsa una tecla para ver tus aplicaciones";
+	getch();
+	system("cls");
+	wait(16);
+	
+	int elige_la_app;
+	
+	cout<<"\n\n\n\t\t\t\t\tTUS APLICACIONES"<<endl;
+	color(9);
+	cout<<"\n\n\t\t";
+	cout<<"**********************************************************************************************";
+	cout<<"\n\n\t\t";
+	cout<<"|   1. Explorador de archivos   |     2. Cripi-Max explorer     |      3. Configuracion      |";
+	cout<<"\n\n\t\t";
+	cout<<"**********************************************************************************************";
+	cout<<"\n\n\t\t";
+	cout<<"|       4. Bloc de notas        |          5. Juegos            |          6. Reloj          |";
+	cout<<"\n\n\t\t";
+	cout<<"**********************************************************************************************";
+	cout<<"\n\n\t\t";
+	cout<<"                                |        7. Calculadora         |";
+	cout<<"\n\n\t\t";
+	cout<<"                                *********************************";
+	
+	cout << "\n\n\n\t\t\t";
+	cin >> elige_la_app;
+	
+	if(elige_la_app == 1) {
+		// Explorador de archivos
+		system("cls");
+		aplicaciones(1);
+	} else if(elige_la_app == 2) {
+		// Internet
+		system("cls");
+		internet_explorer();
+	} else if(elige_la_app == 3) {
+		// Configuración
+		config();
+	} else if(elige_la_app == 4) {
+		// Bloc de notas (simple)
+		system("cls");
+		aplicaciones(4);
+	} else if(elige_la_app == 5) {
+		// Juegos
+		system("cls");
+		juegos();
+	} else if(elige_la_app == 6) {
+		// Reloj
+		system("cls");
+		aplicaciones(3);
+	} else if(elige_la_app == 7) {
+		// Calculadora
+		system("cls");
+		aplicaciones(2);
+	} 
+}}

@@ -1,0 +1,18 @@
+El lenguaje C++
+C++ es un ejemplo de lenguaje de programación compilado, multiparadigma, principalmente de tipo imperativo y orientado a objetos, incluyendo también programación genérica y funcional, características estas últimas que comentaremos más adelante en el curso.
+
+Un programa escrito en un lenguaje imperativo es un conjunto de instrucciones que indican al computador cómo realizar una tarea.
+
+En un lenguaje imperativo:
+
+se conoce en cada paso del programa su estado, determinado por el valor que toman las variables utilizadas.
+
+se altera el estado del programa a través de sentencias.
+
+La implementación hardware de la mayoría de computadores está diseñada para ejecutar código máquina escrito en forma imperativa:
+
+las variables son posiciones de memoria
+
+las sentencias son instrucciones
+
+En este curso nos centraremos principalmente en la parte imperativa del lenguaje C++, que es básicamente la misma que la del lenguaje C.

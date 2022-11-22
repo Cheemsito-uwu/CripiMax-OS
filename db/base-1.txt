@@ -1,0 +1,2 @@
+Dato: comida = "arroz","fideos","spaguetti","quinoa"
+Dato: base = 1
